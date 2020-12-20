@@ -3,6 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +18,19 @@
 
         <div class="main">
             <div class="left-content">
-                <div class="filters">
-                    <?php foreach($categories as $cat){ ?>
-                        <a href="#" class="category"><?= $cat ?></a>
-                    <?php } ?>
+                <div class="filters" id="filters">
+                    <script>
+                        $.ajax({
+                            method:'get', 
+                            url: 'api/categories.php',
+                            success: (data) => {
+                                data = JSON.parse(data);
+                                data.forEach(element => {
+                                    $('#filters').append('<a href="#" id="'+element.id +'" class="categories">' + element.name + '</a>');
+                                });
+                            }
+                        });
+                    </script>
                 </div>
                 <div class="products">
                     
