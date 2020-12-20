@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.container > .header {
+    padding: 2em;
+}
+
+.container > .header > h2 {
+    color: #222;
+    font-family: 'Autour One', cursive;
+}
+
+.container > .nav {
+    display: flex;
+    background: linear-gradient(orange, orangered);
+    border-radius: 20px;
+}
+
+.container > .nav > a {
+    padding: .5em 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container > .main {
+    display: flex;
+    margin: 1em;    
+}
+
+.container > .main > .left-content {
+    flex: 4;
+    displaY: flex;
+}
+.container > .main > .side-bar {
+    flex: 1;
+}
+
+
+.container > .main > .left-content > .filters {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.container > .main > .left-content > .products {
+    flex: 3;
+    border: .2em dashed rgb(219, 135, 66);
+    margin-right: 1em;
+    padding: .5em;
+}
+
+.left-content > .filters > a {
+    display: block;
+    padding: .6em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: orangered;
+    font-family: 'Autour One', cursive;
+    font-size: 13px;
+}
+
+.left-content > .filters > a:hover {
+    text-transform: capitalize;
+    background: linear-gradient(orange, orangered);
+    color: #fff;
+}
+
+.products > .product {
+    display: flex;
+    margin: .5em 0;
+}
+
+.products > .product > .content {
+    margin: .5em;
+}
+.product > .product > .content > h3 {
+    font-family: 'Autour One', cursive;
+}
+
+.products > .product > .content > .order {
+    display: inline-block;
+    padding: .2em 1em;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(orange, orangered);
+    margin: .2em 0;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
